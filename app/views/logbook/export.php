@@ -29,7 +29,7 @@
                 <td style="text-align: center;"><?= $log['solution']; ?></td>
                 <td style="text-align: center;"><?= Database::find('users', 'id', $log['user_id'])->departement; ?></td>
                 <td style="text-align: center;">
-                    <?php foreach (Database::find('area', 'id', $log['id']) as $key => $val) : ?>
+                    <?php foreach ($data['logbook'] as $key => $val) : ?>
                         <?php if ($key == 'id' || $val == 'off') continue; ?>
                         <?= $key; ?>
                     <?php endforeach; ?></td>

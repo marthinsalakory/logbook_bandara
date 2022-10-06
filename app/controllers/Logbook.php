@@ -152,7 +152,7 @@ class Logbook extends Controller
         header("Content-type: application/vnd-ms-excel");
         header("Content-Disposition: attachment; filename=Logbook.xls");
         $this->view('templates/header1', $data);
-        $this->view('logbook/export');
+        $this->view('logbook/export', $data);
         $this->view('templates/footer');
     }
 }
