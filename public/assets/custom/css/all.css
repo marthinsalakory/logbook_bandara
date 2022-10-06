@@ -1,0 +1,24 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    line-height: 13px;
+}
+.navbar-custom {
+    min-height: 82px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 41px;
+    text-transform: uppercase;
+    color: #ffffff;
+    z-index: 99999;
+    background-color: #005EC5;
+    background-image: url(../../img/bg_logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.navbar-custom ul li a {
+    padding: 0 60px;
+    border-left: 1px solid #ffffff;
+}
